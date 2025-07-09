@@ -1,7 +1,15 @@
 name: flu_kit
-description: "A new Flutter package project."
+description: "一个功能丰富的Flutter实用工具包，提供字符串、日期、数字等类型的扩展方法以及常用的应用工具类。"
 version: 0.0.1
 homepage: https://github.com/laichunhui/flu_kit
+repository: https://github.com/laichunhui/flu_kit
+issue_tracker: https://github.com/laichunhui/flu_kit/issues
+topics:
+  - flutter
+  - dart
+  - extensions
+  - utilities
+  - tools
 
 environment:
   sdk: ">=3.4.4 <4.0.0"
