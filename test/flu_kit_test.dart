@@ -23,4 +23,33 @@ void main() {
     expect(time.toTimeString(), "03:25:45");
     expect(time.toMinuteSecondString(), "205:45");
   });
+
+  test('vita util', () {
+    var input = "VITA";
+    expect(VitaUtil.processPhrase(input), "VITA");
+    input = "hi, VITA";
+    expect(VitaUtil.processPhrase(input), "hi, VITA");
+    input = "hey, VITA";
+    expect(VitaUtil.processPhrase(input), "hey, VITA");
+    input = "hello Vida";
+    expect(VitaUtil.processPhrase(input), "hello VITA");
+    input = "hola, Vita";
+    expect(VitaUtil.processPhrase(input), "hola, VITA");
+    input = "hello";
+    expect(VitaUtil.processPhrase(input), "hello");
+    // input = "hello, weather";
+    // expect(VitaUtil.processPhrase(input), "hello, VITA");
+    input = "hola, mira";
+    expect(VitaUtil.processPhrase(input), "hola, VITA");
+    input = "hola, waiter";
+    expect(VitaUtil.processPhrase(input), "hola, VITA");
+    input = "hola, quetal";
+    expect(VitaUtil.processPhrase(input), "hola, VITA");
+    input = "hola, how are you";
+    expect(VitaUtil.processPhrase(input), "hola, how are you");
+    input = "Ahora, mira";
+    expect(VitaUtil.processPhrase(input), "hola, VITA");
+    input = "Ahora beta";
+    expect(VitaUtil.processPhrase(input), "hola, VITA");
+  });
 }
