@@ -11,3 +11,4 @@ export 'utils/file_util.dart';
 export 'utils/storage_util.dart';
 export 'utils/string_util.dart';
 export 'utils/vita_util.dart';
+export 'logger/logger.dart';
