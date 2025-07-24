@@ -25,7 +25,7 @@ dependencies:
   package_info_plus: ^8.3.0
   path_provider: ^2.1.2
   # 日志
-  talker: ^4.9.2
+  talker_flutter: ^4.9.3
 
 dev_dependencies:
   flutter_test:
